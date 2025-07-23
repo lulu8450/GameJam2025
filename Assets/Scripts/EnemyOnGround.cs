@@ -47,7 +47,6 @@ public class EnemyOnGround : MonoBehaviour
         }
     }
 
-
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
