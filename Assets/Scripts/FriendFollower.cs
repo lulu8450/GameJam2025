@@ -3,7 +3,7 @@ using UnityEngine;
 public class FriendFollower : MonoBehaviour
 {
 
-    [Header("Projectile")]
+    [Header("Projectiles")]
     public GameObject projectilePrefab;
     public Transform firePoint;
     public float fireRate = 5f; // tirs par seconde
