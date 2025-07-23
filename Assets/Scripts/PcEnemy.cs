@@ -1,42 +1,65 @@
 using UnityEngine;
+using UnityEngine.UI;
 
 public class PCEnemyInteraction : MonoBehaviour
 {
-    [Header("Paramètres d'interaction")]
-    public float interactionDistance = 2f;       // Distance maximale à partir de laquelle le joueur peut interagir
-    public float holdDuration = 2f;              // Durée nécessaire de maintien du bouton pour désactiver le PC
-    public KeyCode interactionKey = KeyCode.E;   // Touche à maintenir
+    [Header("Interaction")]
+    public float interactionDistance = 2f;
+    public float holdDuration = 2f;
+    public KeyCode interactionKey = KeyCode.E;
 
-    private GameObject player;                   // Référence au joueur
-    private float holdTimer = 0f;                // Chronomètre de maintien du bouton
-    private bool isPlayerNear = false;           // Le joueur est-il à portée ?
-    private bool isDisabled = false;             // Le PC a-t-il déjà été désactivé ?
+    private GameObject player;
+    private float holdTimer = 0f;
+    private bool isPlayerNear = false;
+    private bool isDisabled = false;
+
+    [Header("UI")]
+    public Slider progressBar;       // barre de progression (facultatif)
+    public Text progressText;        // texte de progression en pourcentage
 
     private void Start()
     {
-        // Trouve automatiquement le joueur en utilisant le tag "Player"
         player = GameObject.FindGameObjectWithTag("Player");
+
+        if (progressBar != null)
+            progressBar.gameObject.SetActive(false);
+
+        if (progressText != null)
+            progressText.gameObject.SetActive(false);
     }
 
     private void Update()
     {
         if (isDisabled || player == null)
+        {
+            if (progressBar != null) progressBar.gameObject.SetActive(false);
+            if (progressText != null) progressText.gameObject.SetActive(false);
             return;
+        }
 
-        // Vérifie la distance entre le joueur et le PC Enemy
         float distance = Vector2.Distance(transform.position, player.transform.position);
         isPlayerNear = distance <= interactionDistance;
 
-        // Si le joueur est proche et maintient la touche
         if (isPlayerNear && Input.GetKey(interactionKey))
         {
-            // Incrémente le timer
             holdTimer += Time.deltaTime;
 
-            // (Optionnel) Afficher la progression d'interaction à l'écran
-            Debug.Log($"Interaction en cours : {Mathf.Clamp01(holdTimer / holdDuration) * 100f:F0}%");
+            float progress = Mathf.Clamp01(holdTimer / holdDuration);
 
-            // Si le temps de maintien est suffisant, désactiver
+            // Affichage barre
+            if (progressBar != null)
+            {
+                progressBar.gameObject.SetActive(true);
+                progressBar.value = progress;
+            }
+
+            // Affichage texte
+            if (progressText != null)
+            {
+                progressText.gameObject.SetActive(true);
+                progressText.text = $"{Mathf.RoundToInt(progress * 100)} %";
+            }
+
             if (holdTimer >= holdDuration)
             {
                 DisablePC();
@@ -44,35 +67,41 @@ public class PCEnemyInteraction : MonoBehaviour
         }
         else
         {
-            // Si la touche n’est pas maintenue ou le joueur s’éloigne, reset du timer
-            if (holdTimer > 0f)
-            {
-                Debug.Log("Interaction annulée.");
-            }
             holdTimer = 0f;
+
+            if (progressBar != null)
+            {
+                progressBar.value = 0f;
+                progressBar.gameObject.SetActive(false);
+            }
+
+            if (progressText != null)
+            {
+                progressText.gameObject.SetActive(false);
+                progressText.text = "";
+            }
         }
     }
 
     private void DisablePC()
     {
         isDisabled = true;
+
+        if (progressBar != null)
+            progressBar.gameObject.SetActive(false);
+
+        if (progressText != null)
+        {
+            progressText.text = "DÉSACTIVÉ";
+        }
+
+        // Tu peux ajouter ici une animation, un changement de sprite, ou désactivation logique
         Debug.Log("PC Enemy désactivé.");
+    }
 
-        //TODO
-        // Action à effectuer lors de la désactivation (exemples ci-dessous) :
-
-        // 1. Désactiver l'objet
-        // gameObject.SetActive(false);
-
-        // 2. Désactiver un script d'ennemi si rattaché au PC
-        // GetComponent<EnemyOnGround>()?.enabled = false;
-
-        // 3. Changer l'apparence visuelle (par exemple, sprite éteint)
-        // GetComponent<SpriteRenderer>().color = Color.gray;
-
-        // 4. Déclencher une animation ou un son
-        // GetComponent<Animator>()?.SetTrigger("Off");
-
-        // Ajoute ici ce que tu veux que le PC fasse une fois désactivé
+    private void OnDrawGizmosSelected()
+    {
+        Gizmos.color = Color.cyan;
+        Gizmos.DrawWireSphere(transform.position, interactionDistance);
     }
 }
