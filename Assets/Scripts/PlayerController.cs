@@ -32,7 +32,7 @@ public class PlayerController : MonoBehaviour
         // Application du déplacement horizontal (input manette) tout en conservant la vitesse verticale actuelle
         rb.linearVelocity = new Vector2(moveInput * moveSpeed, rb.linearVelocity.y);
         // Saut : la touche Espace déclenche le saut uniquement si le joueur est bien au sol
-        if (Input.GetKeyDown(KeyCode.UpArrow) && isAbove)
+        if (Input.GetKey("up") && isAbove)
         {
             rb.linearVelocity = new Vector2(rb.linearVelocity.x, jumpForce);
         }
