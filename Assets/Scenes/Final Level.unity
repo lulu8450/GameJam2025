@@ -129,6 +129,7 @@ GameObject:
   m_Component:
   - component: {fileID: 80790976}
   - component: {fileID: 80790977}
+  - component: {fileID: 80790978}
   m_Layer: 0
   m_Name: "Arri\xE8re-plan 2"
   m_TagString: Untagged
@@ -210,6 +211,20 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &80790978
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 80790975}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aa9f54d63d802cf4dafd250210d7bbc1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cam: {fileID: 1427825164}
+  parallaxEffect: 0.7
 --- !u!1 &87088149
 GameObject:
   m_ObjectHideFlags: 0
@@ -220,6 +235,7 @@ GameObject:
   m_Component:
   - component: {fileID: 87088150}
   - component: {fileID: 87088151}
+  - component: {fileID: 87088152}
   m_Layer: 0
   m_Name: "Arri\xE8re-plan 2.5"
   m_TagString: Untagged
@@ -301,6 +317,20 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &87088152
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 87088149}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aa9f54d63d802cf4dafd250210d7bbc1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cam: {fileID: 1427825164}
+  parallaxEffect: 0.7
 --- !u!1 &169114681
 GameObject:
   m_ObjectHideFlags: 0
@@ -833,6 +863,7 @@ GameObject:
   m_Component:
   - component: {fileID: 286419744}
   - component: {fileID: 286419745}
+  - component: {fileID: 286419746}
   m_Layer: 0
   m_Name: "Quatri\xE8me plan 2"
   m_TagString: Untagged
@@ -914,6 +945,20 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &286419746
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 286419743}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aa9f54d63d802cf4dafd250210d7bbc1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cam: {fileID: 1427825164}
+  parallaxEffect: 0.5
 --- !u!1 &290462587
 GameObject:
   m_ObjectHideFlags: 0
@@ -1968,6 +2013,7 @@ GameObject:
   m_Component:
   - component: {fileID: 721149534}
   - component: {fileID: 721149535}
+  - component: {fileID: 721149536}
   m_Layer: 0
   m_Name: Pont second plan
   m_TagString: Untagged
@@ -2049,6 +2095,20 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &721149536
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 721149533}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aa9f54d63d802cf4dafd250210d7bbc1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cam: {fileID: 1427825164}
+  parallaxEffect: 0.3
 --- !u!1 &749148841
 GameObject:
   m_ObjectHideFlags: 0
@@ -2581,6 +2641,7 @@ GameObject:
   m_Component:
   - component: {fileID: 933790631}
   - component: {fileID: 933790632}
+  - component: {fileID: 933790633}
   m_Layer: 0
   m_Name: "Troisi\xE8me plan"
   m_TagString: Untagged
@@ -2662,6 +2723,20 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &933790633
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 933790630}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aa9f54d63d802cf4dafd250210d7bbc1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cam: {fileID: 1427825164}
+  parallaxEffect: 0.3
 --- !u!1 &935396221
 GameObject:
   m_ObjectHideFlags: 0
@@ -2861,7 +2936,7 @@ Transform:
   m_GameObject: {fileID: 1067559830}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.02484, y: 0.12987, z: 0}
+  m_LocalPosition: {x: 8.73484, y: 5.49987, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -2889,6 +2964,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1076544344}
   - component: {fileID: 1076544345}
+  - component: {fileID: 1076544346}
   m_Layer: 0
   m_Name: "Arri\xE8re-plan .5"
   m_TagString: Untagged
@@ -2968,6 +3044,20 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &1076544346
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1076544343}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aa9f54d63d802cf4dafd250210d7bbc1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cam: {fileID: 1427825164}
+  parallaxEffect: 0.7
 --- !u!1 &1113218080
 GameObject:
   m_ObjectHideFlags: 0
@@ -3239,6 +3329,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1137840731}
   - component: {fileID: 1137840732}
+  - component: {fileID: 1137840733}
   m_Layer: 0
   m_Name: Premier plan 2
   m_TagString: Untagged
@@ -3320,6 +3411,20 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &1137840733
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1137840730}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aa9f54d63d802cf4dafd250210d7bbc1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cam: {fileID: 1427825164}
+  parallaxEffect: 0
 --- !u!1 &1163178669
 GameObject:
   m_ObjectHideFlags: 0
@@ -3417,6 +3522,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1233356218}
   - component: {fileID: 1233356219}
+  - component: {fileID: 1233356220}
   m_Layer: 0
   m_Name: "Troisi\xE8me plan 2"
   m_TagString: Untagged
@@ -3498,6 +3604,20 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &1233356220
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1233356217}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aa9f54d63d802cf4dafd250210d7bbc1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cam: {fileID: 1427825164}
+  parallaxEffect: 0.3
 --- !u!1 &1250458940
 GameObject:
   m_ObjectHideFlags: 0
@@ -3908,7 +4028,7 @@ Camera:
   far clip plane: 1000
   field of view: 60
   orthographic: 1
-  orthographic size: 2
+  orthographic size: 6
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
@@ -3933,7 +4053,7 @@ Transform:
   m_GameObject: {fileID: 1427825164}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -46.41, y: -0.17, z: -10}
+  m_LocalPosition: {x: -31.2, y: 5.4, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -4080,6 +4200,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1465854241}
   - component: {fileID: 1465854242}
+  - component: {fileID: 1465854243}
   m_Layer: 0
   m_Name: "Quatri\xE8me plan"
   m_TagString: Untagged
@@ -4161,6 +4282,20 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &1465854243
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1465854240}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aa9f54d63d802cf4dafd250210d7bbc1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cam: {fileID: 1427825164}
+  parallaxEffect: 0.5
 --- !u!1 &1583637180
 GameObject:
   m_ObjectHideFlags: 0
@@ -4345,6 +4480,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1601379353}
   - component: {fileID: 1601379354}
+  - component: {fileID: 1601379355}
   m_Layer: 0
   m_Name: Pont second plan 2
   m_TagString: Untagged
@@ -4426,6 +4562,20 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &1601379355
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1601379352}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aa9f54d63d802cf4dafd250210d7bbc1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cam: {fileID: 1427825164}
+  parallaxEffect: 0.3
 --- !u!1 &1622218002
 GameObject:
   m_ObjectHideFlags: 0
@@ -4523,6 +4673,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1708297795}
   - component: {fileID: 1708297796}
+  - component: {fileID: 1708297797}
   m_Layer: 0
   m_Name: "Arri\xE8re-plan"
   m_TagString: Untagged
@@ -4604,6 +4755,20 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &1708297797
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1708297794}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aa9f54d63d802cf4dafd250210d7bbc1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cam: {fileID: 1427825164}
+  parallaxEffect: 0.7
 --- !u!1 &1712886885
 GameObject:
   m_ObjectHideFlags: 0
@@ -4962,6 +5127,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1871701488}
   - component: {fileID: 1871701489}
+  - component: {fileID: 1871701490}
   m_Layer: 0
   m_Name: Premier plan
   m_TagString: Untagged
@@ -5043,6 +5209,20 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &1871701490
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1871701487}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aa9f54d63d802cf4dafd250210d7bbc1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cam: {fileID: 1427825164}
+  parallaxEffect: 0
 --- !u!1 &2020166603
 GameObject:
   m_ObjectHideFlags: 0
