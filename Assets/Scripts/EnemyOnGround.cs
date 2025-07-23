@@ -9,6 +9,7 @@ public class EnemyOnGround : MonoBehaviour
 
     private Rigidbody2D rb;
     private int moveDirection = 1;
+    public string type = "normal";
 
     [Header("Barre de vie")]
     public float maxHealth = 100f;
@@ -44,6 +45,14 @@ public class EnemyOnGround : MonoBehaviour
             Vector3 localScale = healthBar.localScale;
             // On ne modifie que la largeur (axe X), pas la hauteur (axe Y) ni la profondeur (axe Z) 
             healthBar.localScale = new Vector3(scale, localScale.y, localScale.z);
+        }
+    }
+
+    void OnCollisionEnter2D(Collision2D collision)
+    {
+        if (collision.gameObject.CompareTag("Enemy"))
+        {
+            Flip();
         }
     }
 

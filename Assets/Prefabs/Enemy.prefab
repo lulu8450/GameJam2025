@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 2347499446974772596}
   - component: {fileID: 4665507100087541150}
   - component: {fileID: 3033518424333813773}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: HealthBar
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -84,7 +84,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5088186483503434133}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: GroundCheck
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -117,7 +117,7 @@ GameObject:
   - component: {fileID: 524970023827911528}
   - component: {fileID: 7540123996571920326}
   - component: {fileID: 1521125142256457849}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Contour
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -194,7 +194,7 @@ GameObject:
   - component: {fileID: 4370533846208181905}
   - component: {fileID: 1627695819437992763}
   - component: {fileID: 5320879699353785264}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Enemy
   m_TagString: Enemy
   m_Icon: {fileID: 0}
@@ -210,7 +210,7 @@ Transform:
   m_GameObject: {fileID: 7223171690186758717}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 7.41, y: -0.86, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -261,7 +261,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 10
+  m_SortingOrder: 5
   m_Sprite: {fileID: 7482667652216324306, guid: 311925a002f4447b3a28927169b83ea6, type: 3}
   m_Color: {r: 0.76729554, g: 0.08606181, b: 0.07962492, a: 1}
   m_FlipX: 0
@@ -364,6 +364,7 @@ MonoBehaviour:
   groundLayer:
     serializedVersion: 2
     m_Bits: 64
+  type: normal
   maxHealth: 100
   healthBar: {fileID: 2347499446974772596}
 --- !u!1 &7306503622758872281
@@ -378,7 +379,7 @@ GameObject:
   - component: {fileID: 1936274217866197978}
   - component: {fileID: 8527792813477786573}
   - component: {fileID: 6303953579374801663}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: CanvasHealthBar
   m_TagString: Untagged
   m_Icon: {fileID: 0}

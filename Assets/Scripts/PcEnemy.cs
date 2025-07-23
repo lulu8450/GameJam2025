@@ -1,107 +1,65 @@
 using UnityEngine;
-using UnityEngine.UI;
 
 public class PCEnemyInteraction : MonoBehaviour
 {
-    [Header("Interaction")]
-    public float interactionDistance = 2f;
-    public float holdDuration = 2f;
+    public Transform progressBar;        // Barre visuelle à scaler sur X
+    public float activationTime = 2f;    // Temps pour remplir la barre
+    public float resetSpeed = 1f;        // Vitesse de descente de la barre (en secondes pour vider totalement)
     public KeyCode interactionKey = KeyCode.E;
+    public float interactionDistance = 2f;
 
     private GameObject player;
-    private float holdTimer = 0f;
-    private bool isPlayerNear = false;
+    private float progress = 0f;
     private bool isDisabled = false;
 
-    [Header("UI")]
-    public Slider progressBar;       // barre de progression (facultatif)
-    public Text progressText;        // texte de progression en pourcentage
-
-    private void Start()
+    void Start()
     {
         player = GameObject.FindGameObjectWithTag("Player");
-
-        if (progressBar != null)
-            progressBar.gameObject.SetActive(false);
-
-        if (progressText != null)
-            progressText.gameObject.SetActive(false);
+        SetProgressBar(0f);
     }
 
-    private void Update()
+    void Update()
     {
-        if (isDisabled || player == null)
-        {
-            if (progressBar != null) progressBar.gameObject.SetActive(false);
-            if (progressText != null) progressText.gameObject.SetActive(false);
-            return;
-        }
+        if (isDisabled) return;
+        if (player == null) return;
 
         float distance = Vector2.Distance(transform.position, player.transform.position);
-        isPlayerNear = distance <= interactionDistance;
+        bool isPlayerNear = distance <= interactionDistance;
+        bool isHolding = isPlayerNear && Input.GetKey(interactionKey);
 
-        if (isPlayerNear && Input.GetKey(interactionKey))
+        if (isHolding)
         {
-            holdTimer += Time.deltaTime;
-
-            float progress = Mathf.Clamp01(holdTimer / holdDuration);
-
-            // Affichage barre
-            if (progressBar != null)
-            {
-                progressBar.gameObject.SetActive(true);
-                progressBar.value = progress;
-            }
-
-            // Affichage texte
-            if (progressText != null)
-            {
-                progressText.gameObject.SetActive(true);
-                progressText.text = $"{Mathf.RoundToInt(progress * 100)} %";
-            }
-
-            if (holdTimer >= holdDuration)
-            {
-                DisablePC();
-            }
+            progress += Time.deltaTime / activationTime;
         }
         else
         {
-            holdTimer = 0f;
+            progress -= Time.deltaTime / resetSpeed;
+        }
 
-            if (progressBar != null)
-            {
-                progressBar.value = 0f;
-                progressBar.gameObject.SetActive(false);
-            }
+        progress = Mathf.Clamp01(progress);
+        SetProgressBar(progress);
 
-            if (progressText != null)
-            {
-                progressText.gameObject.SetActive(false);
-                progressText.text = "";
-            }
+        if (progress >= 1f)
+        {
+            ActivatePC();
         }
     }
 
-    private void DisablePC()
+    void SetProgressBar(float value)
+    {
+        if (progressBar != null)
+        {
+            Vector3 localScale = progressBar.localScale;
+            progressBar.localScale = new Vector3(value, localScale.y, localScale.z);
+        }
+    }
+
+    void ActivatePC()
     {
         isDisabled = true;
-
-        if (progressBar != null)
-            progressBar.gameObject.SetActive(false);
-
-        if (progressText != null)
-        {
-            progressText.text = "DÉSACTIVÉ";
-        }
-
-        // Tu peux ajouter ici une animation, un changement de sprite, ou désactivation logique
-        Debug.Log("PC Enemy désactivé.");
-    }
-
-    private void OnDrawGizmosSelected()
-    {
-        Gizmos.color = Color.cyan;
-        Gizmos.DrawWireSphere(transform.position, interactionDistance);
+        // SetProgressBar(0f);
+        // Ici le code de désactivation ou d'action
+        // effet, animation
+        Debug.Log("PC activé !");
     }
 }
