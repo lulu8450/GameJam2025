@@ -207,9 +207,13 @@ Transform:
   m_LocalPosition: {x: 1.1, y: 1.6, z: 0}
   m_LocalScale: {x: 0.854, y: 0.854, z: 0.854}
   m_ConstrainProportionsScale: 0
+<<<<<<< HEAD
   m_Children:
   - {fileID: 4468645636087611626}
   - {fileID: 4766219165399962640}
+=======
+  m_Children: []
+>>>>>>> 7930e322bea12ee4f4aa2d97a8740418cf4cc4b5
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &6665134555746563167
@@ -354,6 +358,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   moveSpeed: 5
   jumpForce: 7
+<<<<<<< HEAD
 --- !u!1 &2503602761786595060
 GameObject:
   m_ObjectHideFlags: 0
@@ -643,3 +648,5 @@ Transform:
   m_Children: []
   m_Father: {fileID: 947701624200824961}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+=======
+>>>>>>> 7930e322bea12ee4f4aa2d97a8740418cf4cc4b5

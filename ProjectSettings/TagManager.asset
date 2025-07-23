@@ -4,17 +4,27 @@
 TagManager:
   serializedVersion: 3
   tags:
+<<<<<<< HEAD
   - Ground
   - Enemy
+=======
+  - Enemy
+  - Ground
+>>>>>>> 7930e322bea12ee4f4aa2d97a8740418cf4cc4b5
   layers:
   - Default
   - TransparentFX
   - Ignore Raycast
-  - 
+  - Ground
   - Water
   - UI
+<<<<<<< HEAD
   - GroundLayer
   - EnemyLayer
+=======
+  - Background
+  - 
+>>>>>>> 7930e322bea12ee4f4aa2d97a8740418cf4cc4b5
   - 
   - 
   - 
