@@ -129,6 +129,7 @@ GameObject:
   m_Component:
   - component: {fileID: 31809321}
   - component: {fileID: 31809322}
+  - component: {fileID: 31809323}
   m_Layer: 0
   m_Name: Bacground1 (2)
   m_TagString: Untagged
@@ -206,6 +207,20 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &31809323
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 31809320}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3f323ca649e5f964f961a1b750e5d753, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  offsetMultiplier: 0.3
+  smoothTime: 0.1
 --- !u!1 &301291183
 GameObject:
   m_ObjectHideFlags: 0
@@ -216,6 +231,7 @@ GameObject:
   m_Component:
   - component: {fileID: 301291184}
   - component: {fileID: 301291185}
+  - component: {fileID: 301291186}
   m_Layer: 0
   m_Name: Bacground1
   m_TagString: Untagged
@@ -232,7 +248,7 @@ Transform:
   m_GameObject: {fileID: 301291183}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: -0.39}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 2, y: 2, z: 0}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -293,6 +309,20 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &301291186
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 301291183}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3f323ca649e5f964f961a1b750e5d753, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  offsetMultiplier: 0
+  smoothTime: 0.3
 --- !u!1 &436470187
 GameObject:
   m_ObjectHideFlags: 0
@@ -303,6 +333,7 @@ GameObject:
   m_Component:
   - component: {fileID: 436470188}
   - component: {fileID: 436470189}
+  - component: {fileID: 436470190}
   m_Layer: 0
   m_Name: Bacground1 (1)
   m_TagString: Untagged
@@ -380,6 +411,20 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &436470190
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 436470187}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3f323ca649e5f964f961a1b750e5d753, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  offsetMultiplier: 0.4
+  smoothTime: 0.2
 --- !u!1 &707387061
 GameObject:
   m_ObjectHideFlags: 0
@@ -571,6 +616,7 @@ GameObject:
   m_Component:
   - component: {fileID: 839612785}
   - component: {fileID: 839612786}
+  - component: {fileID: 839612787}
   m_Layer: 0
   m_Name: Bacground1 (3)
   m_TagString: Untagged
@@ -648,6 +694,20 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &839612787
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 839612784}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3f323ca649e5f964f961a1b750e5d753, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  offsetMultiplier: 0.2
+  smoothTime: 0.1
 --- !u!1 &917988119
 GameObject:
   m_ObjectHideFlags: 0
@@ -731,6 +791,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1209695260}
   - component: {fileID: 1209695261}
+  - component: {fileID: 1209695262}
   m_Layer: 0
   m_Name: BacgroundCharacter
   m_TagString: Untagged
@@ -808,6 +869,20 @@ SpriteRenderer:
   m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &1209695262
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1209695259}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3f323ca649e5f964f961a1b750e5d753, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  offsetMultiplier: 0.1
+  smoothTime: 0.1
 --- !u!1 &1240046007
 GameObject:
   m_ObjectHideFlags: 0
@@ -1031,7 +1106,7 @@ Transform:
   m_GameObject: {fileID: 1545732868}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0.51, z: -1}
+  m_LocalPosition: {x: 0, y: 1.12, z: -1}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1091,6 +1166,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1826175374}
   - component: {fileID: 1826175375}
+  - component: {fileID: 1826175376}
   m_Layer: 0
   m_Name: Bacground1 (4)
   m_TagString: Untagged
@@ -1168,6 +1244,20 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &1826175376
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1826175373}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3f323ca649e5f964f961a1b750e5d753, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  offsetMultiplier: 0.1
+  smoothTime: 0.1
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
