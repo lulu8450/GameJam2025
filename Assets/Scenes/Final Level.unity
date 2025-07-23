@@ -223,8 +223,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aa9f54d63d802cf4dafd250210d7bbc1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cam: {fileID: 1427825164}
-  parallaxEffect: 0.7
 --- !u!1 &87088149
 GameObject:
   m_ObjectHideFlags: 0
@@ -329,8 +327,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aa9f54d63d802cf4dafd250210d7bbc1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cam: {fileID: 1427825164}
-  parallaxEffect: 0.7
 --- !u!1 &169114681
 GameObject:
   m_ObjectHideFlags: 0
@@ -957,8 +953,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aa9f54d63d802cf4dafd250210d7bbc1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cam: {fileID: 1427825164}
-  parallaxEffect: 0.5
 --- !u!1 &290462587
 GameObject:
   m_ObjectHideFlags: 0
@@ -2107,8 +2101,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aa9f54d63d802cf4dafd250210d7bbc1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cam: {fileID: 1427825164}
-  parallaxEffect: 0.3
 --- !u!1 &749148841
 GameObject:
   m_ObjectHideFlags: 0
@@ -2735,8 +2727,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aa9f54d63d802cf4dafd250210d7bbc1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cam: {fileID: 1427825164}
-  parallaxEffect: 0.3
 --- !u!1 &935396221
 GameObject:
   m_ObjectHideFlags: 0
@@ -2911,6 +2901,63 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1001 &1010174468
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 449535639240062735, guid: 8420674d9bfa5c44d967cd15b2aa12f7, type: 3}
+      propertyPath: m_Name
+      value: Player
+      objectReference: {fileID: 0}
+    - target: {fileID: 3227781444067568589, guid: 8420674d9bfa5c44d967cd15b2aa12f7, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3227781444067568589, guid: 8420674d9bfa5c44d967cd15b2aa12f7, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3227781444067568589, guid: 8420674d9bfa5c44d967cd15b2aa12f7, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3227781444067568589, guid: 8420674d9bfa5c44d967cd15b2aa12f7, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3227781444067568589, guid: 8420674d9bfa5c44d967cd15b2aa12f7, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3227781444067568589, guid: 8420674d9bfa5c44d967cd15b2aa12f7, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3227781444067568589, guid: 8420674d9bfa5c44d967cd15b2aa12f7, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3227781444067568589, guid: 8420674d9bfa5c44d967cd15b2aa12f7, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3227781444067568589, guid: 8420674d9bfa5c44d967cd15b2aa12f7, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3227781444067568589, guid: 8420674d9bfa5c44d967cd15b2aa12f7, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 8420674d9bfa5c44d967cd15b2aa12f7, type: 3}
 --- !u!1 &1067559830
 GameObject:
   m_ObjectHideFlags: 0
@@ -3056,8 +3103,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aa9f54d63d802cf4dafd250210d7bbc1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cam: {fileID: 1427825164}
-  parallaxEffect: 0.7
 --- !u!1 &1113218080
 GameObject:
   m_ObjectHideFlags: 0
@@ -3423,8 +3468,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aa9f54d63d802cf4dafd250210d7bbc1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cam: {fileID: 1427825164}
-  parallaxEffect: 0
 --- !u!1 &1163178669
 GameObject:
   m_ObjectHideFlags: 0
@@ -3616,8 +3659,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aa9f54d63d802cf4dafd250210d7bbc1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cam: {fileID: 1427825164}
-  parallaxEffect: 0.3
 --- !u!1 &1250458940
 GameObject:
   m_ObjectHideFlags: 0
@@ -4294,8 +4335,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aa9f54d63d802cf4dafd250210d7bbc1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cam: {fileID: 1427825164}
-  parallaxEffect: 0.5
 --- !u!1 &1583637180
 GameObject:
   m_ObjectHideFlags: 0
@@ -4574,8 +4613,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aa9f54d63d802cf4dafd250210d7bbc1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cam: {fileID: 1427825164}
-  parallaxEffect: 0.3
 --- !u!1 &1622218002
 GameObject:
   m_ObjectHideFlags: 0
@@ -4767,8 +4804,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aa9f54d63d802cf4dafd250210d7bbc1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cam: {fileID: 1427825164}
-  parallaxEffect: 0.7
 --- !u!1 &1712886885
 GameObject:
   m_ObjectHideFlags: 0
@@ -5221,8 +5256,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aa9f54d63d802cf4dafd250210d7bbc1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cam: {fileID: 1427825164}
-  parallaxEffect: 0
 --- !u!1 &2020166603
 GameObject:
   m_ObjectHideFlags: 0
@@ -5577,3 +5610,4 @@ SceneRoots:
   m_Roots:
   - {fileID: 1427825167}
   - {fileID: 1067559831}
+  - {fileID: 1010174468}
